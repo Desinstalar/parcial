@@ -1,22 +1,17 @@
-public class Calculatora {
+public class potencia{
 
-    public static double calculate(double operand1, double operand2, char operator) {
-        switch (operator) {
-            case '+':
-                return operand1 + operand2;
-            case '-':
-                return operand1 - operand2;
-            case '*':
-                return operand1 * operand2;
-            case '/':
-                return operand1 / operand2;
-            case '%':
-                return oprand1 % operand2;
-            case '^':
-                return Math.pow(operand1,operand2);
+    int exponente=3;
+    int potencia=4;
+    int respuesta=0;
+
+    public void calcular() {
+        respuesta=(exponente * (exponente-1) * exponente);
         }
 
-    
-        return 0;
+    public static void main(String[] args) {
+        potencia r = new potencia();
+        r.calcular(); 
+        System.out.println("El resultado es: "+r);
     }
+
 }
